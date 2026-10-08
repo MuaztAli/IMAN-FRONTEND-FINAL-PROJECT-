@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMAN Bootcamp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">IMAN <span>Frontend</span></a>
+            <nav class="nav-menu" id="navMenu">
+                <a href="#hero" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#curriculum" class="nav-link">Curriculum</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#contact" class="nav-link btn-nav">Register Now</a>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero">
+        <div class="container hero-content">
+            <span class="badge">New Bootcam is open for this summer</span>
+            <h1>Learn the frontend web development</h1>
+            <p>Join IMAN Bootcamp — for coders of all levels: develop strong coding habits, learn HTML5, CSS3 and modern JavaScript, build real portfolio projects, and become a real coder .</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn btn-primary">Enroll Today</a>
+                <a href="#curriculum" class="btn btn-secondary">View Curriculum</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <h3>100%</h3>
+                    <p>Practical Learning</p>
+                </div>
+                <div class="stat-item">
+                    <h3>3+</h3>
+                    <p>Real-World Projects</p>
+                </div>
+                <div class="stat-item">
+                    <h3>Zero</h3>
+                    <p>Prior Experience Needed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT TRACK -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-title">
+                <h2>About The Frontend Track</h2>
+                <p>Designed to take you from absolute beginner to a confident frontend developer.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="icon">🎯</div>
+                    <h3>Who Is This For?</h3>
+                    <p>Complete beginners looking to start a tech career, university students wanting practical skills, or professionals switching into web development.</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon">🛠️</div>
+                    <h3>Pure Fundamentals</h3>
+                    <p>We focus strictly on vanilla HTML, CSS, and JavaScript. No heavy frameworks or shortcuts—you will understand how the web truly works under the hood.</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon">💼</div>
+                    <h3>Career Support</h3>
+                    <p>Build a robust GitHub portfolio, receive resume and interview guidance, and join an active community of passionate learners and mentors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHAT YOU'LL LEARN (CURRICULUM & FILTERABLE SKILLS) -->
+    <section id="curriculum" class="curriculum section bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>What You Will Learn</h2>
+                <p>Explore our comprehensive curriculum and filter topics by category.</p>
+            </div>
+            
+            <!-- Filter Buttons -->
+            <div class="filter-btns">
+                <button class="filter-btn active" data-filter="all">All Topics</button>
+                <button class="filter-btn" data-filter="html">HTML5</button>
+                <button class="filter-btn" data-filter="css">CSS3</button>
+                <button class="filter-btn" data-filter="js">JavaScript</button>
+            </div>
+
+            <!-- Curriculum Grid -->
+            <div class="curriculum-grid">
+                <div class="curr-card" data-category="html">
+                    <span class="tag html">HTML5</span>
+                    <h3>Semantic Web Structure</h3>
+                    <p>Learn semantic tags, accessible forms, tables, SEO best practices, and document organization.</p>
+                </div>
+                <div class="curr-card" data-category="css">
+                    <span class="tag css">CSS3</span>
+                    <h3>Modern Layouts & Flexbox</h3>
+                    <p>Master the CSS Box Model, Flexbox, CSS Grid, animations, and responsive media queries.</p>
+                </div>
+                <div class="curr-card" data-category="js">
+                    <span class="tag js">JavaScript</span>
+                    <h3>ES6+ Programming Logic</h3>
+                    <p>Understand variables, control structures, loops, functions, arrays, and object-oriented logic.</p>
+                </div>
+                <div class="curr-card" data-category="js">
+                    <span class="tag js">JavaScript</span>
+                    <h3>DOM Manipulation</h3>
+                    <p>Interact with web pages dynamically, listen to events, update elements, and handle user input.</p>
+                </div>
+                <div class="curr-card" data-category="css">
+                    <span class="tag css">CSS3</span>
+                    <h3>Responsive Design</h3>
+                    <p>Build pixel-perfect websites that automatically adapt to mobile phones, tablets, and desktops.</p>
+                </div>
+                <div class="curr-card" data-category="js">
+                    <span class="tag js">JavaScript</span>
+                    <h3>Asynchronous Web APIs</h3>
+                    <p>Fetch real-time data from backend servers using Async/Await, JSON, and REST APIs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY IMAN BOOTCAMP -->
+    <section class="why-us section">
+        <div class="container why-grid">
+            <div class="why-text">
+                <h2>Why Choose IMAN Bootcamp?</h2>
+                <p>We don't just teach syntax; we build builders. Our immersive curriculum emphasizes problem-solving, clean code architecture, and hands-on portfolio creation.</p>
+                <ul class="why-list">
+                    <li>✓ Hands-on coding exercises in every session</li>
+                    <li>✓ Dedicated peer mentors & code reviews</li>
+                    <li>✓ Collaborative group capstone projects</li>
+                    <li>✓ Supportive learning community on Telegram</li>
+                </ul>
+            </div>
+            <div class="why-box">
+                <div class="box-content">
+                    <h3>💡 "Tell me and I forget. Teach me and I remember. Involve me and I learn."</h3>
+                    <p>— Benjamin Franklin</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STUDENT PROJECTS SHOWCASE -->gf
+    <section id="projects" class="projects section bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Student Project Showcase</h2>
+                <p>Check out what our bootcamp students built using vanilla HTML, CSS, and JS.</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img bg-1">📊</div>
+                    <div class="project-info">
+                        <h3>Classroom Management System</h3>
+                        <p>A procedural Python database system managing student records, CRUD operations, and file persistence.</p>
+                        <span class="tech-tag">Python</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img bg-2">🌤️</div>
+                    <div class="project-info">
+                        <h3>Weather Forecasting App</h3>
+                        <p>A responsive web app fetching live meteorological data using asynchronous JavaScript and Fetch APIs.</p>
+                        <span class="tech-tag">HTML/CSS/JS</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img bg-3">🛒</div>
+                    <div class="project-info">
+                        <h3>E-Commerce Product Catalog</h3>
+                        <p>An interactive shopping interface featuring dynamic category filters, product search, and cart state.</p>
+                        <span class="tech-tag">JavaScript DOM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials section">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Students Say</h2>
+                <p>Hear from alumni who successfully launched their web development journey.</p>
+            </div>
+            <div class="testi-grid">
+                <div class="testi-card">
+                    <p>"The IMAN Bootcamp completely changed how I approach coding. Starting from zero, I now build real coding habbit!"</p>
+                    <h4>--Muaz Tahir</h4>
+                    <span>IT student at Jimma university</span>
+                </div>
+                <div class="testi-card">
+                    <p>"I have joined the IMAN BOOTCAM then i have made a decission to join Software enginering."</p>
+                    <h4>— Abdulaziz Reshid</h4>
+                    <span>Software Engineering Student at Jimma University</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION (ACCORDION) -->
+    <section id="faq" class="faq section bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Got questions? We've got answers.</p>
+            </div>
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is the Frontend Track?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The Frontend Track is an immersive training program teaching you how to design and build user interfaces using HTML5, CSS3, and JavaScript.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do I need previous coding experience?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No prior experience is necessary! We start from absolute zero, covering basic computer navigation up to advanced asynchronous JavaScript.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Are frameworks like React or Tailwind used?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No. This track focuses strictly on vanilla HTML, CSS, and JavaScript to build a rock-solid foundation before moving on to frameworks.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How long does the bootcamp last?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The track runs for several intensive weeks, featuring live sessions, hands-on coding labs, and portfolio project submissions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT / REGISTRATION FORM -->
+    <section id="contact" class="contact section">
+        <div class="container contact-container">
+            <div class="section-title">
+                <h2>Register For The Track</h2>
+                <p>Fill out the form below to secure your spot in our upcoming cohort.</p>
+            </div>
+            <form id="registrationForm" class="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" placeholder="Enter your full name">
+                    <small class="error-msg" id="nameError"></small>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="name@example.com">
+                    <small class="error-msg" id="emailError"></small>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="0911223344">
+                    <small class="error-msg" id="phoneError"></small>
+                </div>
+                <div class="form-group">
+                    <label for="message">Why do you want to join?</label>
+                    <textarea id="message" rows="4" placeholder="Tell us a bit about your goals..."></textarea>
+                    <small class="error-msg" id="msgError"></small>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Submit Application</button>
+                <p class="success-msg" id="successMessage"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 IMAN Bootcamp Frontend Track. All rights reserved.</p>
+            <p>Keep Coding • Keep Learning • Keep Building </p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>
